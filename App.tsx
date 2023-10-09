@@ -5,8 +5,9 @@ const ShareExample = () => {
   const onShare = async () => {
     try {
       const result = await Share.share({
-        message:
-          'https://play.google.com/store/apps/details?id=com.wastematerialapp&pcampaignid=web_share',
+         message:
+           'https://play.google.com/store/apps/details?id=com.wastematerialapp&pcampaignid=web_share',
+      
       });
       if (result.action === Share.sharedAction) {
         if (result.activityType) {
