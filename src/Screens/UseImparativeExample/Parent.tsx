@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import Child from '../Component/Child';
+import Child from './Child';
+
 
 const Parent = () => {
     const childRef = useRef<{ onPressIncrementBtn: () => void } | null>(null);
