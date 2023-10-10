@@ -1,7 +1,9 @@
 const NavigationConstants = {
   // Auth Stack
   // PreferredLangScreen: 'PreferredLangScreen',
-  UseImparativeExParent: 'UseImparativeExParent'
+  UseImparativeExParent: 'UseImparativeExParent',
+  HomeScreen: 'HomeScreen',
+  DownloadFileScreen: 'DownloadFileScreen'
 
 
 };
