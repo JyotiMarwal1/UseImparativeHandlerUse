@@ -1,29 +1,27 @@
 import React, { useRef } from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import Child from './Child';
+import UseImparativeExChild from './UseImparativeExChild';
 
 
-const Parent = () => {
+
+const UseImparativeExParent = () => {
     const childRef = useRef<{ onPressIncrementBtn: () => void } | null>(null);
 
     const onPressParentBtn = () => {
-        console.log("Parent Button Pressed")
+        console.log("****Ref", childRef.current)
         childRef?.current?.onPressIncrementBtn();
     }
-
-    console.log("****Ref", childRef.current)
 
     return (
         <View>
             <Text>Parent</Text>
-            <Child
+            <Text>In parent component we get access to child component function</Text>
+            <UseImparativeExChild
                 ref={childRef}
 
             />
-
             <TouchableOpacity
                 onPress={onPressParentBtn}
-
                 style={{
                     backgroundColor: 'green',
                     padding: 10,
@@ -46,6 +44,6 @@ const Parent = () => {
     )
 }
 
-export default Parent
+export default UseImparativeExParent
 
 const styles = StyleSheet.create({})

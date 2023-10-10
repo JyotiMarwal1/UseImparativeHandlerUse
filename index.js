@@ -4,6 +4,6 @@
 
 import { AppRegistry } from 'react-native';
 import { name as appName } from './app.json';
-import Parent from './src/Screens/UseImparativeExample/Parent';
+import Index from './src';
 
-AppRegistry.registerComponent(appName, () => Parent);
+AppRegistry.registerComponent(appName, () => Index);

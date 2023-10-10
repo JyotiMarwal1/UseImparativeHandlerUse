@@ -1,7 +1,7 @@
 import React, { forwardRef, useImperativeHandle, useState } from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
 
-const Child = forwardRef((props, ref) => {
+const UseImparativeExChild = forwardRef((props, ref) => {
     const [count, setCount] = useState(0);
 
     const onPressIncrementBtn = () => {
@@ -40,4 +40,4 @@ const Child = forwardRef((props, ref) => {
     );
 });
 
-export default Child;
+export default UseImparativeExChild;
